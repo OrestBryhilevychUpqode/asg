@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASG</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="asg-careers"></div>
+    <style>
+      .asg-careers {
+        background: #ffffff;
+        z-index: 40;
+        box-shadow: 0px 22px 44px -10px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        padding: 65px 100px;
+        max-width: 1140px;
+        margin: auto;
+      }
+      @media only screen and (max-width: 991px) {
+        .asg-careers {
+          padding: 50px 60px;
+        }
+      }
+      @media only screen and (max-width: 767px) {
+        .asg-careers {
+          padding: 30px 15px;
+        }
+      }
+      .asg-careers__item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-style: normal;
+        letter-spacing: -0.01em;
+        font-family: Kievitoffcpro, sans-serif;
+        padding: 40px 0;
+      }
+      .asg-careers__item:not(:last-of-type) {
+        border-bottom: 2px solid #f7f0e6;
+      }
+      @media only screen and (max-width: 767px) {
+        .asg-careers .asg-careers__item-btn {
+          font-size: 20px;
+        }
+        .asg-careers__item {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+      .asg-careers__item:hover .asg-careers__item-heading {
+        color: #1c872b;
+      }
+      .asg-careers__item-position {
+        padding-right: 15px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        border-right: 2px solid #f7f0e6;
+        width: calc(100% - 290px);
+      }
+      @media only screen and (max-width: 767px) {
+        .asg-careers__item-position {
+          padding-right: 0;
+          border: none;
+          width: 100%;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+        }
+      }
+      .asg-careers__item-text {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        color: #444d42;
+      }
+      .asg-careers__item-heading {
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 34px;
+        text-transform: uppercase;
+        color: #444d42;
+        margin-bottom: 20px;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+      }
+      .asg-careers__item-btn-wrap {
+        padding-left: 100px;
+      }
+      @media only screen and (max-width: 767px) {
+        .asg-careers__item-btn-wrap {
+          padding-left: 0;
+          margin-top: 20px;
+        }
+      }
+      .asg-careers__item-btn {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        gap: 17px;
+        white-space: nowrap;
+        font-weight: 900;
+        font-size: 22px;
+        line-height: 29px;
+        text-transform: uppercase;
+        color: #1c872b;
+      }
+      .asg-careers__item-btn:hover {
+        opacity: 0.75;
+      }
+      .asg-careers__item-btn svg {
+        max-width: 25px;
+      }
+    </style>
+
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
